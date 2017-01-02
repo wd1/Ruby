@@ -1,0 +1,10 @@
+
+<div class='panel panel-default'>
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= link_to character['name'], character_path(character['id']) %></h3>
+  </div>
+  <div class="panel-body">
+    <p><%= character['id'] %></p>
+    <p><%= image_tag("#{character['thumbnail']['path']}.#{character['thumbnail']['extension']}") %></p>
+  </div>
+</div>
